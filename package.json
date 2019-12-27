@@ -3,13 +3,16 @@
   "description": "nodejs static web server ## install cnpm i --save-dev eslint babel-eslint",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^3.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "fix": "eslint --fix ."
